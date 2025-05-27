@@ -5,7 +5,11 @@ const User = require('../models/user')
 const requestLogger = (request, response, next) => {
   logger.info('Method:', request.method)
   logger.info('Path:  ', request.path)
-  logger.info('Body:  ', request.body)
+  const bodyToLog = {...request.body}
+  if (bodyToLog.password){
+    bodyToLog.password = "This is secret!"
+  }
+  logger.info('Body:  ', bodyToLog)
   logger.info('---')
   next()
 }
