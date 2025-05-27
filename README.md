@@ -1,10 +1,10 @@
-#🧠 Projekti: Bamlari.fi / Bamlaa.fi
+# 🧠 Projekti: Bamlari.fi / Bamlaa.fi
 
-#🎯 Projektin idea:
+# 🎯 Projektin idea:
 Stadinslangin opettamiseen keskittyvä verkkosivusto, jossa on sekä julkinen käyttöliittymä että hallintapaneeli.
 Kohderyhmänä slangista kiinnostuneet, slangin opiskelijat, devaajat ja mahdollisesti yhteisö (foorumin kautta).
 
-#🖥️ Julkinen käyttöliittymä (Public Interface)
+# 🖥️ Julkinen käyttöliittymä (Public Interface)
 ✅ Päivän sana
 Näytetään etusivulla – random sana päädatabasesta.
 
@@ -21,7 +21,7 @@ Lomake, jolla käyttäjät voivat ehdottaa uusia slangisanoja tai niiden käytt�
 /api/words GET–rajapinta avoimena muille projekteille.
 Selkeä kuvaus: miten käyttää, esimerkkikyselyt jne.
 
-#🔒 Admin dashboard
+# 🔒 Admin dashboard
 🔧 Kirjautuminen tokenilla / piilotettu route
 
 ✏️ Uusien quiz-sanojen lisäys quiz-databaselle
@@ -33,7 +33,7 @@ Selkeä kuvaus: miten käyttää, esimerkkikyselyt jne.
 ❌ Sanaehdotuksen hylkääminen
 → sana poistetaan ehdotusdatabasesta
 
-#🗃️ Tietokannat (MongoDB Atlas)
+# 🗃️ Tietokannat (MongoDB Atlas)
 words (päädatabase hyväksytyille sanoille)
  – Sana, suomennos, käyttöesimerkki
 
@@ -42,14 +42,14 @@ suggestions (käyttäjien ehdotukset)
 
 users (jos forum tehdään, muuten ei pakollinen)
 
-#🧪 Mahdollinen lisäominaisuus:
+# 🧪 Mahdollinen lisäominaisuus:
 💬 Foorumi – "Bamlaa muiden kaa"
 
 Julkinen kirjautuminen ja keskustelut slangista
 
 Mahdollisuus jakaa omia sanoja ja kysyä toisten merkityksiä
 
-#🧱 Teknologiat
+# 🧱 Teknologiat
 Frontend: React + Vite
 
 Backend: Node.js + Express
