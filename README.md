@@ -1,4 +1,4 @@
-# 🧠 Projekti: Bamlari.fi / Bamlaa.fi
+# 🧠 Projekti: Bamlaa.fi
 
 ## 🎯 Projektin idea:
 Stadinslangin opettamiseen keskittyvä verkkosivusto, jossa on sekä julkinen käyttöliittymä että hallintapaneeli.
