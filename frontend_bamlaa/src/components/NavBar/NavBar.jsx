@@ -24,7 +24,6 @@ const NavBar = () => {
             <h3 className="NavBartitle">Bamlaa.fi</h3>
             <div className="Navbarrow">
             <Link className="NavBarcontainer-Link" to="/">Koti</Link>
-            <Link className="NavBarcontainer-Link" to="/suggestion">Ehdota uutta sanaa</Link>
             <Link className="NavBarcontainer-Link" to="/api-documentation">Devaajille</Link>
             <Togglable buttonLabel="login" ref={LoginFormRef}>
               <LoginForm />
@@ -37,7 +36,6 @@ const NavBar = () => {
           <h3 className="NavBartitle">Bamlaa.fi</h3>
           <div className="Navbarrow">
           <Link className="NavBarcontainer-Link" to="/">Koti</Link>
-          <Link className="NavBarcontainer-Link" to="/suggestion">Ehdota uutta sanaa</Link>
           <Link className="NavBarcontainer-Link" to="/api-documentation">Devaajille</Link>
           <Link className="NavBarcontainer-Link" to="/dashboard">Hallintapaneeli</Link>
           <div className="NavBarloggedin">{user.username} logged in</div>

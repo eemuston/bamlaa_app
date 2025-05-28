@@ -5,7 +5,6 @@ import suggestionService from "./services/suggestions"
 import wordService from "./services/words"
 import Notification from "./components/Notification/Notification"
 import Dashboard from "./components/Dashboard/Dashboard"
-import CreateSuggestion from "./components/CreateSuggestion/CreateSuggestion"
 import Documentation from "./components/Documentation/Documentation"
 import Home from "./components/Home/Home"
 import Quiz from "./components/Quiz/Quiz"
@@ -31,7 +30,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/suggestion" element={<CreateSuggestion />} />
         <Route path="/api-documentation" element={<Documentation />} />
         <Route path="/quiz" element={<Quiz />} />
       </Routes>
