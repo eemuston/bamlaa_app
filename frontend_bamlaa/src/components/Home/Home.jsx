@@ -1,9 +1,10 @@
 import WordOfTheDay from "../WordOfTheDay/WordOfTheDay"
+import { Link } from "react-router-dom"
 
 const Home = () => {
     return (
         <div>
-            Home sweet home
+            <Link to="/quiz">Harjoittelemaan</Link>
             <WordOfTheDay />    
         </div>
     )

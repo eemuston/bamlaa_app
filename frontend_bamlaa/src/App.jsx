@@ -8,6 +8,7 @@ import Dashboard from "./components/Dashboard/Dashboard"
 import CreateSuggestion from "./components/CreateSuggestion/CreateSuggestion"
 import Documentation from "./components/Documentation/Documentation"
 import Home from "./components/Home/Home"
+import Quiz from "./components/Quiz/Quiz"
 import { Routes, Route } from "react-router-dom"
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/suggestion" element={<CreateSuggestion />} />
         <Route path="/api-documentation" element={<Documentation />} />
+        <Route path="/quiz" element={<Quiz />} />
       </Routes>
     </div>
   )
