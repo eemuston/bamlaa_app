@@ -20,24 +20,32 @@ const NavBar = () => {
   return (
     <div className="NavBarcontainer">
       {!user && (
-        <div className="Navbarrow">
-          <Link to="/">Koti</Link>
-          <Link to="/suggestion">Ehdota uutta sanaa</Link>
-          <Togglable buttonLabel="login" ref={LoginFormRef}>
-            <LoginForm />
-          </Togglable>
+        <div className="NavBarWrapper">
+            <h3 className="NavBartitle">Bamlaa.fi</h3>
+            <div className="Navbarrow">
+            <Link to="/">Koti</Link>
+            <Link to="/suggestion">Ehdota uutta sanaa</Link>
+            <Link to="/api-documentation">Devaajille</Link>
+            <Togglable buttonLabel="login" ref={LoginFormRef}>
+              <LoginForm />
+            </Togglable>
+          </div>
         </div>
       )}
       {user && (
-        <div className="Navbarrow">
+        <div className="NavBarWrapper">
+          <h3 className="NavBartitle">Bamlaa.fi</h3>
+          <div className="Navbarrow">
           <Link to="/">Koti</Link>
           <Link to="/suggestion">Ehdota uutta sanaa</Link>
+          <Link to="/api-documentation">Devaajille</Link>
           <Link to="/dashboard">Hallintapaneeli</Link>
           <div className="NavBarloggedin">{user.username} logged in</div>
           <button className="NavBarbutton" onClick={handleLogout}>
             log out
           </button>
-        </div>
+          </div>
+      </div>
       )}
     </div>
   );

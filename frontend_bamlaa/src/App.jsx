@@ -1,26 +1,27 @@
-import { useState, useEffect, useRef } from "react";
-import { useUser } from "./context/UserContext";
-import NavBar from "./components/NavBar/NavBar";
-import suggestionService from "./services/suggestions";
-import wordService from "./services/words";
-import Notification from "./components/Notification/Notification";
-import Dashboard from "./components/Dashboard/Dashboard";
-import CreateSuggestion from "./components/CreateSuggestion/CreateSuggestion";
-import Home from "./components/Home/Home";
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect, useRef } from "react"
+import { useUser } from "./context/UserContext"
+import NavBar from "./components/NavBar/NavBar"
+import suggestionService from "./services/suggestions"
+import wordService from "./services/words"
+import Notification from "./components/Notification/Notification"
+import Dashboard from "./components/Dashboard/Dashboard"
+import CreateSuggestion from "./components/CreateSuggestion/CreateSuggestion"
+import Documentation from "./components/Documentation/Documentation"
+import Home from "./components/Home/Home"
+import { Routes, Route } from "react-router-dom"
 
 const App = () => {
-  const { user, userDispatch } = useUser();
+  const { user, userDispatch } = useUser()
 
   useEffect(() => {
-    const loggedUserJSON = window.localStorage.getItem("loggedBamlaaUser");
+    const loggedUserJSON = window.localStorage.getItem("loggedBamlaaUser")
     if (loggedUserJSON) {
-      const user = JSON.parse(loggedUserJSON);
-      userDispatch({ type: "LOGIN", payload: user });
-      wordService.setToken(user.token);
-      suggestionService.setToken(user.token);
+      const user = JSON.parse(loggedUserJSON)
+      userDispatch({ type: "LOGIN", payload: user })
+      wordService.setToken(user.token)
+      suggestionService.setToken(user.token)
     }
-  }, []);
+  }, [])
 
   return (
     <div>
@@ -30,9 +31,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/suggestion" element={<CreateSuggestion />} />
+        <Route path="/api-documentation" element={<Documentation />} />
       </Routes>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
