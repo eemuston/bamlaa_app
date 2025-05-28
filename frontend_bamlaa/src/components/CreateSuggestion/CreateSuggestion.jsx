@@ -2,6 +2,7 @@ import { useState } from "react";
 import suggestionService from "../../services/suggestions";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useSetNotification } from "../../context/NotificationContext";
+import './CreateSuggestion.css'
 
 const CreateSuggestion = () => {
   const queryClient = useQueryClient();
@@ -41,7 +42,7 @@ const CreateSuggestion = () => {
   };
 
   return (
-    <div>
+    <div className="CreateSuggestionContainer">
       <h2>Ehdota uutta sanaa tietokantaan lisättäväksi</h2>
       <form onSubmit={addWord}>
         <div>

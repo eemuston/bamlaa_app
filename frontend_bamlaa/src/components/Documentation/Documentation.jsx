@@ -1,15 +1,15 @@
 const Documentation = () => {
     return (
-        <div style={{ padding: '1rem', maxWidth: 800, margin: 'auto' }}>
+        <div className="Documentationcontainer" style={{ padding: '1rem', maxWidth: 800, margin: 'auto' }}>
             <h1>API Dokumentaatio: Slangisanat API</h1>
             <h2>Yleiskuvaus</h2>
             <p>Tämä API tarjoaa lukuoikeuden slangisanoihin tietokannassa.</p>
             <h2>Päätepisteet</h2>
             <h3>1. Hae kaikki sanat</h3>
-            <p>URL: /api/words</p>
-            <p>Metodi: GET</p>
-            <p>Kuvaus: Palauttaa listan kaikista slangisanoista tietokannasta.</p>
-            <p>Esimerkkivastaus:</p>
+            <p><b>URL:</b> /api/words</p>
+            <p><b>Metodi:</b> GET</p>
+            <p><b>Kuvaus:</b> Palauttaa listan kaikista slangisanoista tietokannasta.</p>
+            <p><b>Esimerkkivastaus:</b></p>
             <pre>
                 <code>
                     {`Request: GET https://bamlaa.fi/api/words
@@ -34,11 +34,11 @@ Response:
                 </code>
             </pre>
             <h3>2. Hae sana tunnuksella</h3>
-            <p>URL: /api/words/:id</p>
-            <p>Metodi: GET</p>
-            <p>Kuvaus: Palauttaa yhden slangisanan sen uniikin tunnuksen perusteella.</p>
-            <p>URL-parametrit: id - sanan uniikki tunniste(merkkijono).</p>
-            <p>Esimerkkivastaus:</p>
+            <p><b>URL:</b> /api/words/:id</p>
+            <p><b>Metodi:</b> GET</p>
+            <p><b>Kuvaus:</b> Palauttaa yhden slangisanan sen uniikin tunnuksen perusteella.</p>
+            <p><b>URL-parametrit:</b> id - sanan uniikki tunniste(merkkijono).</p>
+            <p><b>Esimerkkivastaus:</b></p>
             <pre>
                 <code>
                 {`Request: GET https://bamlaa.fi/api/words/68366c08d89712066c6c82ab

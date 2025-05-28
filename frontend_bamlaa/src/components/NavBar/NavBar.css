@@ -1,6 +1,37 @@
 .NavBarcontainer{
-    background: white;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    color: #F5F5F5;
+    padding: 10px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.NavBarcontainer-Link {
+    position: relative;
+    font-size: 20px;
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.NavBarcontainer-Link::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F5F5F5;
+    transition: 0.3s;
+    
+}
+
+.NavBarcontainer-Link:hover::before {
+    width: 100%;
 }
 
 .Navbarrow{
@@ -12,4 +43,8 @@
 .NavBarWrapper{
     display: flex;
     justify-content: space-between;
+}
+
+.NavBartitle{
+    color: #F5F5F5;
 }

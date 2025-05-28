@@ -1,0 +1,97 @@
+.container {
+  max-width: 600px;
+  margin: 60px auto 40px auto; /* leave space for fixed nav if needed */
+  padding: 20px;
+  text-align: center;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  white-space: pre-line; /* preserves line breaks */
+}
+
+.options-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.option-item {
+  padding: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.option-item:hover {
+  background-color: #ddd;
+}
+
+.option-item.correct {
+  background-color: #c8f7c5;
+  border-color: #48c774;
+}
+
+.option-item.wrong {
+  background-color: #f7c5c5;
+  border-color: #f14668;
+}
+
+.option-item.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.QuizButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.QuizButton:hover:not(:disabled) {
+  background-color: #444;
+}
+
+.QuizButton:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.finish {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: black;
+}

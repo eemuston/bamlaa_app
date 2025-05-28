@@ -1,14 +1,15 @@
-import { useUser } from "../../context/UserContext";
-import CreateWord from "../CreateWord/CreateWord";
-import HandleSuggestion from "../HandleSuggestion/HandleSuggestion";
+import { useUser } from "../../context/UserContext"
+import CreateWord from "../CreateWord/CreateWord"
+import HandleSuggestion from "../HandleSuggestion/HandleSuggestion"
+import './Dashboard.css'
 
 const Dashboard = () => {
   const { user, userDispatch } = useUser();
 
   return (
-    <div>
+    <div className="DashboardContainer">
       {user ? (
-        <div>
+        <div className="DashboardContent">
           <CreateWord />
           <HandleSuggestion />
         </div>

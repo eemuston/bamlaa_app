@@ -2,6 +2,8 @@ import { useQuery } from "@tanstack/react-query"
 import wordService from "../../services/words"
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import Confetti from 'react-confetti'
+import './Quiz.css'
 
 const Quiz = () => {
     const navigate = useNavigate()
@@ -20,6 +22,7 @@ const Quiz = () => {
     const [correctAnswers, setCorrectAnswers] = useState(0)
     const [remainingWords, setRemainingWords] = useState([])
     const [gameFinished, setGameFinished] = useState(false)
+    const [perfect, setPerfect] = useState(false)
     
     
     useEffect(() => {
@@ -39,6 +42,8 @@ const Quiz = () => {
         console.log(remainingWords.length)
         if (round > 9) {
             setGameFinished(true)
+            if (correctAnswers === 10)
+            setPerfect(true)
             return
         }
         
@@ -105,7 +110,8 @@ const Quiz = () => {
     if (!currentWord) return <div>Loading question...</div>
     
     return (
-        <div className="container">
+    <div className="container">
+      {perfect && <Confetti />}
       <h1>HarjoitusBeli</h1>
       <h2>Kierros {round} / 10</h2>
       <h3>Mitä tarkoittaa: "{currentWord.word}"?</h3>
@@ -131,15 +137,17 @@ const Quiz = () => {
           ))}
         </ul>
       ) : (
-        <h2 className="finish">Peli päättyi! Pisteesi: {correctAnswers} / 10</h2>
+        <div>
+            <h2 className="finish">Peli päättyi! Pisteesi: {correctAnswers} / 10</h2>
+        </div>
       )}
 
       {!gameFinished ? (
-        <button onClick={handleNextClick} disabled={!hasAnswered}>
+        <button className="QuizButton" onClick={handleNextClick} disabled={!hasAnswered}>
           Seuraava
         </button>
       ) : (
-        <button onClick={handleFinish}>Lopeta</button>
+        <button  className="QuizButton" onClick={handleFinish}>Lopeta</button>
       )}
     </div>
   )
