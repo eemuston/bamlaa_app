@@ -6,6 +6,14 @@ wordsRouter.get('/', async (request, response) => {
   response.json(words)
 })
 
+wordsRouter.get('/:id', async (request, response) => {
+  const word = await Word.findById(request.params.id)
+  if (!word) {
+    return response.status(404).json({error: 'word not found'})
+  }
+  response.json(word)
+})
+
 wordsRouter.post('/', async (request, response) => {
     const user = request.user
     if (!user) {
