@@ -1,5 +1,5 @@
-import './Notification.css';
-import { useNotificationValue } from '../../NotificationContext';
+import "./Notification.css";
+import { useNotificationValue } from "../../context/NotificationContext";
 
 const Notification = () => {
   const notification = useNotificationValue();
@@ -7,7 +7,7 @@ const Notification = () => {
     return null;
   }
   const notificationStyle = {
-    color: notification.color || 'black',
+    color: notification.color || "black",
   };
 
   return (
