@@ -95,3 +95,9 @@ h3 {
   font-size: 1.3rem;
   color: black;
 }
+
+.Elias{
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 15px;
+}

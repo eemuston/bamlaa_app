@@ -25,7 +25,7 @@ const NavBar = () => {
             <div className="Navbarrow">
             <Link className="NavBarcontainer-Link" to="/">Koti</Link>
             <Link className="NavBarcontainer-Link" to="/api-documentation">Devaajille</Link>
-            <Togglable buttonLabel="login" ref={LoginFormRef}>
+            <Togglable buttonLabel="Admin" ref={LoginFormRef}>
               <LoginForm />
             </Togglable>
           </div>
@@ -38,9 +38,9 @@ const NavBar = () => {
           <Link className="NavBarcontainer-Link" to="/">Koti</Link>
           <Link className="NavBarcontainer-Link" to="/api-documentation">Devaajille</Link>
           <Link className="NavBarcontainer-Link" to="/dashboard">Hallintapaneeli</Link>
-          <div className="NavBarloggedin">{user.username} logged in</div>
+          <div className="NavBarloggedin">{user.username} kirjautunut sisään</div>
           <button className="NavBarbutton" onClick={handleLogout}>
-            log out
+            Kirjaudu Ulos
           </button>
           </div>
       </div>

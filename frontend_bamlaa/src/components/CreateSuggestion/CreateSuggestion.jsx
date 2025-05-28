@@ -43,12 +43,13 @@ const CreateSuggestion = () => {
 
   return (
     <div className="CreateSuggestionContainer">
-      <h2>Ehdota uutta sanaa tietokantaan lisättäväksi</h2>
+      <h2 className="Suggestiontitle">Ehdota uutta sanaa tietokantaan lisättäväksi</h2>
       <form onSubmit={addWord}>
         <div>
           <label>
-            slangisana:
+            Slangisana:
             <input
+              className="SuggestionInput"
               name="word"
               value={newWord}
               onChange={(event) => setNewWord(event.target.value)}
@@ -57,8 +58,9 @@ const CreateSuggestion = () => {
         </div>
         <div>
           <label>
-            käännös:
+            Käännös:
             <input
+              className="SuggestionInput"
               name="translation"
               value={newTranslation}
               onChange={(event) => setNewTranslation(event.target.value)}
@@ -67,15 +69,16 @@ const CreateSuggestion = () => {
         </div>
         <div>
           <label>
-            käyttöesimerkki:
+            Käyttöesimerkki:
             <textarea
+              className="SuggestionTextarea"
               name="usage"
               value={newUsage}
               onChange={(event) => setNewUsage(event.target.value)}
             />
           </label>
         </div>
-        <button type="submit">tallenna</button>
+        <button className="SuggestionButton" type="submit">Tallenna</button>
       </form>
     </div>
   );

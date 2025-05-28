@@ -1,7 +1,8 @@
-
-
-.DashboardContent{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+.DashboardContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  margin: 25px;
+  gap: 46px;
 }

@@ -2,6 +2,7 @@ import wordService from "../../services/words";
 import suggestionService from "../../services/suggestions";
 import { useMutation, useQueryClient, useQuery } from "@tanstack/react-query";
 import { useSetNotification } from "../../context/NotificationContext";
+import './HandleSuggestion.css'
 
 const HandleSuggestion = () => {
   const dispatch = useSetNotification();
@@ -60,11 +61,11 @@ const HandleSuggestion = () => {
   const suggestions = result.data;
 
   return (
-    <div>
-      <h2>Sana Ehdotukset</h2>
+    <div className="HandleSuggestionContainer">
+      <h2 className="HandleSuggestionTitle">Sana Ehdotukset</h2>
       {suggestions[0] ? (
         <div>
-          <h3> Uusi Ehdotus </h3>
+          <h3 className="HandleSuggestionTitle"> Uusi Ehdotus </h3>
           <div>Sana: {suggestions[0].word}</div>
           <div>Käännös: {suggestions[0].translation}</div>
           {suggestions[0].usage ? (
@@ -72,12 +73,14 @@ const HandleSuggestion = () => {
           ) : (
             <div> Käyttöesimerkkiä ei annettu! </div>
           )}
-          <button onClick={() => newWordMutation.mutate(suggestions[0])}>
-            Hyväksy
-          </button>
-          <button onClick={() => refuseSuggestion(suggestions[0])}>
-            Hylkää
-          </button>
+          <div className="HandleSuggestionButtons">
+            <button onClick={() => newWordMutation.mutate(suggestions[0])}>
+                Hyväksy
+            </button>
+            <button onClick={() => refuseSuggestion(suggestions[0])}>
+                Hylkää
+            </button>
+          </div>
         </div>
       ) : (
         <div> Ei uusia ehdotuksia </div>

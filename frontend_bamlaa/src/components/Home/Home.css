@@ -9,10 +9,10 @@
     border-radius: 10px;
 }
 
-.HomeButton{
+button{
   padding: 14px 28px;
   font-size: 1.2rem;
-  background-color: #222;
+  background-color: #111;
   color: white;
   border: none;
   border-radius: 8px;
@@ -20,6 +20,12 @@
   transition: background-color 0.3s ease;
 }
 
-.HomeButton:hover {
+button:hover {
   background-color: #444;
+}
+
+.Wordoftheday{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 10px;
 }

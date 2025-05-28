@@ -8,7 +8,9 @@ const Home = () => {
         <div className="homewrapper">
             <div className="homecontainer">
                 <Link to="/quiz"><button className="HomeButton">Harjoittelemaan</button></Link>
-                <WordOfTheDay />    
+                <div className="Wordoftheday">
+                    <WordOfTheDay />    
+                </div>
             </div>
             <CreateSuggestion />
         </div>

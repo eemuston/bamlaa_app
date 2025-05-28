@@ -52,7 +52,7 @@ const LoginForm = () => {
             onChange={({ target }) => setPassword(target.value)}
           />
         </div>
-        <button type="submit">login</button>
+        <button type="submit">Kirjaudu Sisään</button>
       </form>
     </div>
   );
