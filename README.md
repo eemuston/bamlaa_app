@@ -1,54 +1,58 @@
-# 🧠 Projekti: Bamlaa.fi
+# 🧠 Bamlaa.fi
 
-## 🎯 Projektin idea:
-Stadinslangin opettamiseen keskittyvä verkkosivusto, jossa on sekä julkinen käyttöliittymä että hallintapaneeli.
-Kohderyhmänä slangista kiinnostuneet, slangin opiskelijat, devaajat ja mahdollisesti yhteisö (foorumin kautta).
+## 🎯 Project Idea
 
-## 🖥️ Julkinen käyttöliittymä (Public Interface)
-✅ Päivän sana
-Näytetään etusivulla – random sana päädatabasesta.
+**Bamlaa.fi** is a web application focused on teaching *Stadin Slangi* (Helsinki slang).  
+It includes both a public-facing interface and an admin dashboard.
 
-✅ Harjoittelu quiz
-Näytetään joko suomenkielinen tai slangisana ja neljä vaihtoehtoa, joista valitaan oikea käännös.
+**Target users:** Slang enthusiasts, students, developers, and potentially a broader community (via forum integration).
 
-✅ Sanaston selaus (optional)
-Lista kaikista päädatabasen sanoista.
 
-✅ Sanojen ehdotuslomake
-Lomake, jolla käyttäjät voivat ehdottaa uusia slangisanoja tai niiden käyttötapoja.
+## 🖥️ Public Interface
 
-✅ API-dokumentaatio näkymä
-/api/words GET–rajapinta avoimena muille projekteille.
-Selkeä kuvaus: miten käyttää, esimerkkikyselyt jne.
+- ✅ **Word of the Day**  
+  Displays a random word from the main database on the homepage.
 
-## 🔒 Admin dashboard
-🔧 Kirjautuminen tokenilla / piilotettu route
+- ✅ **Practice Quiz**  
+  Users are shown either a Finnish or slang word and must choose the correct translation from four options.
 
-✏️ Uusien quiz-sanojen lisäys quiz-databaselle
+- ✅ **Vocabulary Browser**  
+  A list of all approved slang words from the main database.
 
-✅ Sanaehdotusten hyväksyminen
-→ siirretään sana päädatabaseen
-→ poistetaan sana ehdotusdatabasesta
+- ✅ **Word Suggestion Form**  
+  Allows users to submit new slang words or usage examples.
 
-❌ Sanaehdotuksen hylkääminen
-→ sana poistetaan ehdotusdatabasesta
+- ✅ **API Documentation View**  
+  Public GET endpoint at `/api/words` for use in external projects.  
+  Includes usage instructions and example queries.
 
-## 🗃️ Tietokannat (MongoDB Atlas)
-words (päädatabase hyväksytyille sanoille)
- – Sana, suomennos, käyttöesimerkki
+## 🔒 Admin Dashboard
 
-suggestions (käyttäjien ehdotukset)
- – Sana, suomennos, käyttöesimerkki
+- 🔧 **Token-based Login / Hidden Route**
 
-users 
+- ✏️ **Add New Quiz Words**  
+  Admins can add new words to the quiz-specific database.
 
-## 🧱 Teknologiat
-Frontend: React + Vite
+- ✅ **Approve Word Suggestions**  
+  - Moves the word to the main database  
+  - Deletes it from the suggestions database
 
-Backend: Node.js + Express
+- ❌ **Reject Word Suggestions**  
+  - Deletes the word from the suggestions database
 
-Tietokanta: MongoDB Atlas
+## 🗃️ Databases (MongoDB Atlas)
 
-Auth (admin): JWT-token
+- `words` – Approved slang words  
+  - Fields: word, translation, usage example
 
-Deployment: Vercel (frontend) + Render / Railway / Fly.io (backend)
+- `suggestions` – User-submitted suggestions  
+  - Fields: word, translation, usage example
+
+- `users` – Admin user data
+
+## 🧱 Technologies Used
+
+- **Frontend:** React + Vite  
+- **Backend:** Node.js + Express  
+- **Database:** MongoDB Atlas  
+- **Authentication:** JWT token (admin login)  
