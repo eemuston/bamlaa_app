@@ -40,6 +40,8 @@ It includes both a public-facing interface and an admin dashboard.
 - ❌ **Reject Word Suggestions**  
   - Deletes the word from the suggestions database
 
+![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/dashboard.png?raw=true)
+
 ## 🗃️ Databases (MongoDB Atlas)
 
 - `words` – Approved slang words  
