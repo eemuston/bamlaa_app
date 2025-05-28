@@ -1,11 +1,16 @@
 import loginService from '../services/login'
 import wordService from '../services/words'
 import suggestionService from '../services/suggestions'
+import { useUser } from '../UserContext'
+import { useSetNotification } from '../NotificationContext'
+import { useState} from 'react'
 
 
 const LoginForm = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const { user, userDispatch } = useUser()
+    const dispatch = useSetNotification()
 
     const handleLogin = async (event) => {
         event.preventDefault()
@@ -14,7 +19,7 @@ const LoginForm = () => {
                 username,
                 password,
             })
-            window.localStorage.setItem('loggedBlogappUser', JSON.stringify(user))
+            window.localStorage.setItem('loggedBamlaaUser', JSON.stringify(user))
             wordService.setToken(user.token)
             suggestionService.setToken(user.token)
             userDispatch({ type: 'LOGIN', payload: user })

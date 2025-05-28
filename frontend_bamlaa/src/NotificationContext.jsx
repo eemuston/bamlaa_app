@@ -25,7 +25,7 @@ export const useSetNotification = () => {
 
 let timeoutId
 
-export const NotificationContextProvider = (props) => {
+export const NotificationContextProvider = ({children}) => {
   const [notification, notificationDispatch] = useReducer(NotificationReducer, {
     message: null,
     color: null,
@@ -46,7 +46,7 @@ export const NotificationContextProvider = (props) => {
 
   return (
     <NotificationContext.Provider value={[notification, setNotification]}>
-      {props.children}
+      {children}
     </NotificationContext.Provider>
   )
 }
