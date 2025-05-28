@@ -16,8 +16,7 @@ It includes both a public-facing interface and an admin dashboard.
 - ✅ **Word Suggestion Form**  
   Allows users to submit new slang words or usage examples.
 
-
-![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/home.png?raw=true)
+<img src="https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/home.png?raw=true" alt="home screen" width="400"/>
 
 - ✅ **Vocabulary Browser**  
   A list of all approved slang words from the main database.
