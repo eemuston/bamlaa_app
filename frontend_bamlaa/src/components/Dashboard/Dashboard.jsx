@@ -1,5 +1,6 @@
 import { useUser } from '../../UserContext'
 import CreateWord from '../CreateWord/CreateWord'
+import HandleSuggestion from '../HandleSuggestion/HandleSuggestion'
 
 const Dashboard = () => {
     const { user, userDispatch } = useUser()
@@ -10,6 +11,7 @@ const Dashboard = () => {
             ?
             <div>
                 <CreateWord />
+                <HandleSuggestion />
             </div> 
             :
             <div>kirjaudu sisään nähdäksesi dashboardin </div>

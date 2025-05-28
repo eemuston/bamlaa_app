@@ -1,8 +1,8 @@
-import loginService from '../services/login'
-import wordService from '../services/words'
-import suggestionService from '../services/suggestions'
-import { useUser } from '../UserContext'
-import { useSetNotification } from '../NotificationContext'
+import loginService from '../../services/login'
+import wordService from '../../services/words'
+import suggestionService from '../../services/suggestions'
+import { useUser } from '../../UserContext'
+import { useSetNotification } from '../../NotificationContext'
 import { useState} from 'react'
 
 

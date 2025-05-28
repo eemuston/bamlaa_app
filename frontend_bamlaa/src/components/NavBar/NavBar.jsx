@@ -1,4 +1,4 @@
-import LoginForm from "../LoginForm"
+import LoginForm from "../LoginForm/LoginForm"
 import Togglable from "../Togglable/Togglable"
 import { useUser } from '../../UserContext'
 import { useRef } from 'react'
