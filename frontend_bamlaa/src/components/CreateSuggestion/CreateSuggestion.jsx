@@ -44,7 +44,7 @@ const CreateSuggestion = () => {
   return (
     <div className="CreateSuggestionContainer">
       <h2 className="Suggestiontitle">Ehdota uutta sanaa tietokantaan lisättäväksi</h2>
-      <form onSubmit={addWord}>
+      <form autocomplete="off" onSubmit={addWord}>
         <div>
           <label>
             Slangisana:
