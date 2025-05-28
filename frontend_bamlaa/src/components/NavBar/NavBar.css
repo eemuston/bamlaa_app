@@ -1,3 +1,11 @@
 .NavBarcontainer{
-    background: aqua;
+    background: white;
+    padding: 10px;
+}
+
+.Navbarrow{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
 }
