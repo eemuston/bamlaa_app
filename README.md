@@ -21,18 +21,18 @@ It includes both a public-facing interface and an admin dashboard.
 - ✅ **Vocabulary Browser**  
   A list of all approved slang words from the main database.
 
-![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/vocabulary.png?raw=true)
+<img src="https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/vocabulary.png?raw=true" alt="home screen" width="400"/>
 
 - ✅ **Practice Quiz**  
   Users are shown either a Finnish or slang word and must choose the correct translation from four options.
 
-![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/quiz.png?raw=true)
+<img src="https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/quiz.png?raw=true" alt="home screen" width="400"/>
 
 - ✅ **API Documentation View**  
   Public GET endpoint at `/api/words` for use in external projects.  
   Includes usage instructions and example queries.
 
-![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/documentation.png?raw=true)
+<img src="https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/documentation.png?raw=true" alt="home screen" width="400"/>
 
 ## 🔒 Admin Dashboard
 
@@ -48,7 +48,7 @@ It includes both a public-facing interface and an admin dashboard.
 - ❌ **Reject Word Suggestions**  
   - Deletes the word from the suggestions database
 
-![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/dashboard.png?raw=true)
+<img src="https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/dashboard.png?raw=true" alt="home screen" width="400"/>
 
 ## 🗃️ Databases (MongoDB Atlas)
 
@@ -65,4 +65,6 @@ It includes both a public-facing interface and an admin dashboard.
 - **Frontend:** React + Vite  
 - **Backend:** Node.js + Express  
 - **Database:** MongoDB Atlas  
-- **Authentication:** JWT token (admin login)  
+- **Authentication:** JWT token (admin login) 
+
+[Watch the demo on YouTube](https://youtu.be/fKW5mDNtJkk)
