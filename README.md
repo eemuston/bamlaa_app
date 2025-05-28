@@ -14,7 +14,7 @@ Näytetään joko suomenkielinen tai slangisana ja neljä vaihtoehtoa, joista va
 ✅ Sanaston selaus (optional)
 Lista kaikista päädatabasen sanoista.
 
-✅ Sanuehdotuslomake
+✅ Sanojen ehdotuslomake
 Lomake, jolla käyttäjät voivat ehdottaa uusia slangisanoja tai niiden käyttötapoja.
 
 ✅ API-dokumentaatio näkymä
