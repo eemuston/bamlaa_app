@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useEffect} from "react"
 import { useUser } from "./context/UserContext"
 import NavBar from "./components/NavBar/NavBar"
 import suggestionService from "./services/suggestions"
