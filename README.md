@@ -13,18 +13,27 @@ It includes both a public-facing interface and an admin dashboard.
 - ✅ **Word of the Day**  
   Displays a random word from the main database on the homepage.
 
-- ✅ **Practice Quiz**  
-  Users are shown either a Finnish or slang word and must choose the correct translation from four options.
+- ✅ **Word Suggestion Form**  
+  Allows users to submit new slang words or usage examples.
+
+
+![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/home.png?raw=true)
 
 - ✅ **Vocabulary Browser**  
   A list of all approved slang words from the main database.
 
-- ✅ **Word Suggestion Form**  
-  Allows users to submit new slang words or usage examples.
+![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/vocabulary.png?raw=true)
+
+- ✅ **Practice Quiz**  
+  Users are shown either a Finnish or slang word and must choose the correct translation from four options.
+
+![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/quiz.png?raw=true)
 
 - ✅ **API Documentation View**  
   Public GET endpoint at `/api/words` for use in external projects.  
   Includes usage instructions and example queries.
+
+![alt text](https://github.com/eemuston/bamlaa_app/blob/main/frontend_bamlaa/public/documentation.png?raw=true)
 
 ## 🔒 Admin Dashboard
 
