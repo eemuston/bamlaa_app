@@ -40,14 +40,7 @@ words (päädatabase hyväksytyille sanoille)
 suggestions (käyttäjien ehdotukset)
  – Sana, suomennos, käyttöesimerkki
 
-users (jos forum tehdään, muuten ei pakollinen)
-
-## 🧪 Mahdollinen lisäominaisuus:
-💬 Foorumi – "Bamlaa muiden kaa"
-
-Julkinen kirjautuminen ja keskustelut slangista
-
-Mahdollisuus jakaa omia sanoja ja kysyä toisten merkityksiä
+users 
 
 ## 🧱 Teknologiat
 Frontend: React + Vite
@@ -56,6 +49,6 @@ Backend: Node.js + Express
 
 Tietokanta: MongoDB Atlas
 
-Auth (admin): JWT-token tai salainen admin-avain .env:ssä
+Auth (admin): JWT-token
 
 Deployment: Vercel (frontend) + Render / Railway / Fly.io (backend)
