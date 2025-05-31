@@ -44,7 +44,7 @@ const CreateWord = () => {
   return (
     <div className="CreateWordContainer">
       <h2 className="Wordtitle">Lisää uusi sana tietokantaan</h2>
-      <form autocomplete="off" onSubmit={addWord}>
+      <form autoComplete="off" onSubmit={addWord}>
         <div>
           <label>
             Slangisana:
