@@ -5,7 +5,7 @@
 **Bamlaa.fi** is a web application focused on teaching *Stadin Slangi* (Helsinki slang).  
 It includes both a public-facing interface and an admin dashboard.
 
-**Target users:** Slang enthusiasts, students, developers, and potentially a broader community (via forum integration).
+**Target users:** Slang enthusiasts, students and developers.
 
 
 ## 🖥️ Public Interface
