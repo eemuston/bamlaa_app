@@ -23,8 +23,6 @@ const Quiz = () => {
     const [remainingWords, setRemainingWords] = useState([])
     const [gameFinished, setGameFinished] = useState(false)
     const [perfect, setPerfect] = useState(false)
-    const [elias, setElias] = useState(false)
-    
     
     useEffect(() => {
         if (result.data) {
@@ -45,8 +43,6 @@ const Quiz = () => {
             setGameFinished(true)
             if (correctAnswers === 10)
                 setPerfect(true)
-            if (correctAnswers === 0)
-                setElias(true)
             return
         }
         
@@ -141,14 +137,7 @@ const Quiz = () => {
         </ul>
       ) : (
         <div>
-            {elias ? 
-            <div>
-                <h2 className="finish"> Bläääh! Pelasit kun Elias, 0 PISTETTÄ!</h2>
-                <img className="Elias" src="Elias.jpeg" width={200}/>     
-            </div>
-            :
             <h2 className="finish">Peli päättyi! Pisteesi: {correctAnswers} / 10</h2>
-            }
         </div>
       )}
 
